@@ -1,0 +1,14 @@
+
+.page-banner { background: #344c3c; color: white; text-align: center; padding: 90px 8%; }
+.page-banner span { color: #d6aa72; letter-spacing: 3px; font-size: 12px; }
+.page-banner h1 { font-size: clamp(30px,5vw,48px); max-width: 850px; margin: 20px auto 0; }
+.tips { padding: 80px 0; }
+.tips h2 { text-align: center; font-size: 38px; margin-bottom: 45px; }
+.tip-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 25px; }
+.tip-grid article { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 25px #00000008; }
+.tip-icon { color: #b47c4c; font-family: 'Playfair Display'; font-size: 35px; }
+.tip-grid h3 { margin: 15px 0; color: #344c3c; }
+.tip-grid p { color: #777; line-height: 1.8; }
+.quote { background: #eee5d8; text-align: center; padding: 75px 10%; }
+.quote h2 { max-width: 850px; margin: auto; color: #344c3c; font-size: 30px; line-height: 1.6; }
+@media(max-width:750px) { .tip-grid { grid-template-columns: 1fr; } .tips { padding: 50px 7%; } }

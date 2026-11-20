@@ -1,0 +1,121 @@
+
+.hero {
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  padding: 80px 10%;
+  background:
+    linear-gradient(90deg, rgba(36,30,24,.85), rgba(36,30,24,.15)),
+    url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1800')
+    center/cover;
+  color: white;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.tag, .intro span {
+  color: #d6aa72;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.15;
+  margin: 25px 0;
+}
+
+.hero h1 span {
+  color: #e4bd8c;
+}
+
+.hero p {
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 550px;
+  color: #eee5dc;
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.btn-primary, .btn-outline {
+  padding: 15px 24px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #b47c4c;
+  color: white;
+}
+
+.btn-outline {
+  border: 1px solid white;
+  color: white;
+}
+
+.intro {
+  text-align: center;
+  padding: 90px 10%;
+}
+
+.intro h2 {
+  font-size: 38px;
+  margin: 18px 0;
+}
+
+.intro p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+  color: #777;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 30px 10% 90px;
+}
+
+.cards article {
+  background: white;
+  padding: 40px 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 30px #00000008;
+}
+
+.cards i {
+  color: #b47c4c;
+  font-size: 30px;
+}
+
+.cards h3 {
+  margin: 20px 0 10px;
+}
+
+.cards p {
+  color: #777;
+  line-height: 1.7;
+}
+
+@media(max-width: 768px) {
+  .hero {
+    min-height: 550px;
+    padding: 60px 7%;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    padding: 20px 7% 60px;
+  }
+}

@@ -1,0 +1,51 @@
+
+.navbar {
+  height: 85px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #faf7f1;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 15px #00000008;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #344c3c;
+}
+
+.logo span { color: #b47c4c; }
+
+.links {
+  display: flex;
+  gap: 30px;
+}
+
+.links a {
+  font-size: 14px;
+  color: #554d43;
+  transition: .3s;
+}
+
+.links a:hover, .links .active { color: #b47c4c; }
+
+.nav-btn {
+  background: #344c3c;
+  color: white;
+  padding: 13px 20px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+@media(max-width: 750px) {
+  .navbar { height: auto; padding: 20px 5%; flex-wrap: wrap; gap: 18px; }
+  .links { order: 3; width: 100%; justify-content: space-between; gap: 10px; }
+  .links a { font-size: 12px; }
+  .nav-btn { font-size: 11px; padding: 10px; }
+}
+  
